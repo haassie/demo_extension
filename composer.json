@@ -1,0 +1,25 @@
+{
+  "name": "haassie/demo_extension",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "license": ["GPL-2.0+"],
+  "require": {
+    "typo3/cms-core": "9.3.*@dev"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "9.3.x-dev"
+    },
+    "typo3/cms": {
+      "Package": {
+        "partOfFactoryDefault": false
+      },
+      "extension-key": "demo_extension"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Haassie\\DemoExtension\\Seo\\": "Classes/"
+    }
+  }
+}
